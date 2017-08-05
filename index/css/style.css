@@ -1,0 +1,13 @@
+@media screen and (max-width: 445px) {}
+
+@media screen and (min-width: 446px) {}
+
+@media screen and (min-width: 599.5px) {}
+
+@media screen and (min-width: 996px) {}
+
+@media screen and (max-width: 1199px) {
+    .mainPage .row {
+        max-width: 100%;
+    }
+}

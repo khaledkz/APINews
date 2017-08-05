@@ -1,0 +1,416 @@
+
+
+
+<div id="plantersCard">
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand" href="#">
+            <h2 class="text-primary">Home <i class="fa fa-home" aria-hidden="true"></i>
+            </h2>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-danger" href="#">News <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">UK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">24/24   </a>
+                </li>
+ 		<li class="nav-item">
+		 <div id="rotate" class="rotateSemi topSemi"></div>
+                </li>
+            </ul>
+          <div id="mainNav">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <select class="btn btn-info">
+                    <option value="0">All Category</option>
+                    <option value="1">News</option>
+                    <option value="2">Politic</option>
+                    <option value="3">Sport</option>
+                    <option value="4">UK</option>
+                    <option value="5">Scotland</option>
+                </select>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@      NAVBAR END      @@@@@@@@@@@@@@@@@@@@@@-->
+
+
+    <!--  $$$$$$$$$$$$$$$$$$$$$$$    START MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+    <div class="mainSlider">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <!-- <div class="row ">
+             <h3 class="col-lg-2 col-md-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10 col-md-10"><img src="1.jpg" alt="The Last of us"></div>
+
+          </div>
+          <div class="row ">
+             <h3 class="col-lg-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10"><img src="2.jpg" alt="The Last of us"></div>
+
+          </div>
+          <div class="row ">
+             <h3 class="col-lg-2 leftSlider">One Slide <button>see more</button></h3>
+            <div class="col-lg-10"><img src="3.jpg" alt="The Last of us"></div>
+
+          </div> -->
+            <img src="mainPlanter/comingsoon.png" alt="The Last of us">
+            <img src="mainPlanter/comingsoon.png" alt="The Last of us">
+            <img src="mainPlanter/comingsoon.png" alt="The Last of us">
+        </div>
+    </div>
+    <!--  $$$$$$$$$$$$$$$$$$$$$$$    End MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ Start BreezeThrough  @@@@@@@@@@@@@@@@@@@@### -->
+
+    <div id ="BreezeThrough">
+      <div class=""> <img src="loffi.png"></div>
+      <div>
+          <h4>  Stay Update 24/24 News follow The trouth  </h4>
+          <p> 4Zoro News The best</p>
+      </div>
+      <div><button class="btn btn-success">Get Started</button></div>
+    </div>
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ End BreezeThrough  @@@@@@@@@@@@@@@@@@@@### -->
+
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ Start LookingGreat  @@@@@@@@@@@@@@@@@@@@### -->
+
+    <div class="LookingGreat row">
+          <div class="leftGreat col-lg-4 col-md-12 col-sm-12">
+                <h4>Do you want joint US?</h4>
+                <p> We've a great volunteer team </p>
+                <button class="btn btn-danger">Start now</button>
+          </div>
+          <div class="rightGreat col-lg-4 col-md-12 col-sm-12">
+                <div> <img class="img-responsive" src="lookinggreat.png"></div>
+          </div>
+    </div>
+
+<!-- {{this.urlToImage}}// {{this.author}} // {{this.author}} -->
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ Start Cards SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+            <h1 style="text-align:center;" class="text-info">World's News</h1>
+        <div class=" owl-carousel owl-theme container  ">
+                {{#each getArrTwo}}
+                   <div class="item thumbnail">
+                     <a href="3.html"><img src="{{this.urlToImage}}"></a>
+                     <h5 class="text-center text-primary">{{this.author}}</h5>
+                     <p class="text-center text-muted">{{this.title}}</p>
+
+                  </div>
+                  {{/each}}
+
+
+            </div>
+
+
+
+         <h1 style="text-align:center;" class="text-info">UK News</h1>
+
+        <div class=" owl-carousel owl-theme container  ">
+                {{#each getArrayUkNews}}
+                   <div class="item thumbnail">
+                     <a href="3.html"><img src="{{this.urlToImage}}"></a>
+                     <h5 class="text-center text-primary">{{this.author}}</h5>
+                     <p class="text-center text-muted">{{this.title}}</p>
+
+                  </div>
+                  {{/each}}
+
+
+            </div>
+
+
+             <h1 style="text-align:center;" class="text-info">USA News</h1>
+
+        <div class=" owl-carousel owl-theme container  ">
+                {{#each getArrayUsaNews}}
+                   <div class="item thumbnail">
+                     <a href="3.html"><img src="{{this.urlToImage}}"></a>
+                     <h5 class="text-center text-primary">{{this.author}}</h5>
+                     <p class="text-center text-muted">{{this.title}}</p>
+
+                  </div>
+                  {{/each}}
+
+
+            </div>
+
+             <h1 style="text-align:center;" class="text-info">Economic News</h1>
+
+        <div class=" owl-carousel owl-theme container  ">
+                {{#each getEconoArray}}
+                   <div class="item thumbnail">
+                     <a href="3.html"><img src="{{this.urlToImage}}"></a>
+                     <h5 class="text-center text-primary">{{this.author}}</h5>
+                     <p class="text-center text-muted">{{this.title}}</p>
+
+                  </div>
+                  {{/each}}
+
+
+            </div>
+
+  
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ END Cars SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+
+  <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ End LookingGreat  @@@@@@@@@@@@@@@@@@@@### -->
+
+
+
+    <div id="plantersSlider">
+        <div class="row">
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> Sport Articles </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+                <div class=" owl-carousel owl-theme container  ">
+                  {{#each getSportArray}}
+ 
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">{{this.publishedAt}}</p>
+                        <a href="1.html"><img src="{{this.urlToImage}}"></a>
+                        <p class="text-center text-danger">{{this.title}}</p>
+                    </div>{{/each}}
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+ 
+    <div id="plantersSlider">
+        <div class="row">
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> Tecnology Articles </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+                <div class=" owl-carousel owl-theme container  ">
+                  {{#each getTecno}}
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">{{this.publishedAt}}</p>
+                        <a href="1.html"><img src="{{this.urlToImage}}"></a>
+                        <p class="text-center text-danger">{{this.title}}</p>
+                    </div>{{/each}}
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div id="plantersSlider">
+        <div class="row">
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> Art Articles </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+                <div class=" owl-carousel owl-theme container  ">
+                  {{#each getArt}}
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">{{this.publishedAt}}</p>
+                        <a href="1.html"><img src="{{this.urlToImage}}"></a>
+                        <p class="text-center text-danger">{{this.title}}</p>
+                    </div>{{/each}}
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="plantersSlider">
+        <div class="row">
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> Art Articles </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+                <div class=" owl-carousel owl-theme container  ">
+                  {{#each getNaturalNews}}
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">{{this.publishedAt}}</p>
+                        <a href="1.html"><img src="{{this.urlToImage}}"></a>
+                        <p class="text-center text-danger">{{this.title}}</p>
+                    </div>{{/each}}
+                     
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="plantersSlider">
+        <div class="row">
+            <div class="leftBoxSlider col col-lg-3 col-md-12 col-sm-12">
+                <h6 id="sentenceLeft" class="text-warning"> Education Articles </h6>
+                <button class="btn btn-danger">See All</button>
+            </div>
+            <div class="col-lg-9 sliderInside col-md-12 col-sm-12">
+                <div class=" owl-carousel owl-theme container  ">
+                  {{#each getEducArray}}
+                    <div class="item thumbnail">
+                        <p class="text-center text-success">{{this.publishedAt}}</p>
+                        <a href="1.html"><img src="{{this.urlToImage}}"></a>
+                        <p class="text-center text-danger">{{this.title}}</p>
+                    </div>{{/each}}
+                     
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+    <!-- ###@@@@@@@@@@@~@@@@@@@@@@@@@@ END PLANTER SLIDER @@@@@@@@@@@@@@@@@@@@### -->
+
+
+
+    <script>
+           $(document).ready(function() {
+
+            //  $$$$$$$$$$$$$$$$$$$$$$$    START MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $(".mainSlider #owl-demo").owlCarousel({
+
+                navigation: true, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                dots: false,
+                nav: true,
+                items: 1,
+                autoplay: true,
+                itemsDesktop: false,
+                itemsDesktopSmall: false,
+                autoPlayTimeout: 1000,
+                autoplayHoverPause: true,
+                loop: true,
+                itemsTablet: false,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                itemsMobile: false
+
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    END MAIN SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    Start Planter SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $('#plantersSlider .owl-carousel').owlCarousel({
+                loop: true,
+                // navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                autoPlay: 1000,
+                margin: 10,
+
+                responsive: {
+
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    450: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    END   Planter SLIDER       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    Start   Planter Cars       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+            $('#plantersCard .owl-carousel').owlCarousel({
+                loop: true,
+                // navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                autoPlay: 1000,
+                margin: 10,
+
+                responsive: {
+
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    450: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            });
+            //  <!--  $$$$$$$$$$$$$$$$$$$$$$$    End   Planter Cars       $$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+       
+
+
+        /// API
+
+    </script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="mainPlanter/assets/vendors/highlight.js"></script>
+    <script src="mainPlanter/assets/js/app.js"></script>
+    <script src="mainPlanter/assets/js/js.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
